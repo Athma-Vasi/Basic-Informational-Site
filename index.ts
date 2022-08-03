@@ -6,6 +6,8 @@ import { serve } from 'https://deno.land/std@0.150.0/http/server.ts';
 
 const PORT = 8080;
 
+console.log(`Server running on port ${PORT}`);
+
 await serve(handler, { port: PORT });
 
 async function handler(req: Request): Promise<Response> {
@@ -41,13 +43,6 @@ async function handler(req: Request): Promise<Response> {
   }
 }
 
-//
-//
-//
-//
-//
-//
-//
 /*
 USING EXPRESS WITH NODEJS
 
